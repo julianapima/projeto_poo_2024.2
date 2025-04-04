@@ -5,20 +5,41 @@ from Fogo import fogo
 
 class batalha:
 
-    def _init_(self, pokemonSelecionado):
-        self.__pokemonUsuario = pokemonSelecionado
-        self.__pokemonOponente = random
+    def _init_(self):
+        self.__pokemonUsuario = 0
+        self.__pokemonOponente = 0
         self.__status = 0
+
+    def getPokemonUsuario(self):
+        return self.__pokemonUsuario
+    
+    def getPokemonOponente(self):
+        return self.__pokemonOponente
+    
+    def getStatus(self):
+        return self.__status
+
+    def setPokemonUsuario(self, pokemon):
+        self.__pokemonUsuario = pokemon
+
 
     def selecaoUsuario(self):
         tipos = ["fogo", "agua", "grama"]
         aleatorio = randint(0, 2)
-        i = 0
+
         for i in tipos:
             if i == tipos[i]:
                 if tipos[i] == "fogo":
-                    Fogo:fogo
-            i += 1
+                    self.__pokemonUsuario:fogo
+                elif tipos[i] == "agua":
+                    self.__pokemonUsuario:agua
+                elif tipos[i] == "grama":
+                    self.__pokemonUsuario:grama
+        
+        
+
+    
+                
 
 
 
